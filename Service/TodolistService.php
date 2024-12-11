@@ -10,7 +10,7 @@ namespace Service {
     class TodolistServiceImpl implements TodolistService {
         private TodolistRepository $todolistRepository;
         public function __construct(TodolistRepository $todolistRepository) {
-            $this->todolistRepository = $todolistRepository
+            $this->todolistRepository = $todolistRepository;
         }
         function showTodolist(): void {
             echo "TODOLIST" . PHP_EOL;
