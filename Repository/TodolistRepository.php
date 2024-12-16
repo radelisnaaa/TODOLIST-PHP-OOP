@@ -10,7 +10,7 @@ namespace Repository {
     }
     class TodolistRepositoryImpl implements TodolistRepository {
         public array $todolist = array();
-        function save(Todolist $todolis): void
+        function save(Todolist $todolist): void
         {
             $number = sizeof($this->todolist) + 1;
             $this->todolist[$number] = $todolist;

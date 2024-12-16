@@ -6,10 +6,10 @@ require_once __DIR__ . '/../Service/TodolistService.php';
 require_once __DIR__ . '/../View/TodolistView.php';
 require_once __DIR__ . '/../Helper/InputHelper.php';
 
-use Entity\Todolist;
-use Repository\TodolistRepositoryImpl;
-use Service\TodolistServiceImpl;
-use View\TodolistView;
+use \Entity\Todolist;
+use \Repository\TodolistRepositoryImpl;
+use \Service\TodolistServiceImpl;
+use \View\TodolistView;
 
 function testViewShowTodolist(): void
 {
@@ -43,7 +43,7 @@ function testViewAddTodolist(): void
     $todolistService->showTodolist();
 }
 
-function testViemRemoveTodoList(): void
+function testViewRemoveTodolist(): void
 {
     $$todolistRepository = new TodolistRepositoryImpl();
     $todolistService = new TodolistServiceImpl($todolistRepository);
@@ -56,7 +56,6 @@ function testViemRemoveTodoList(): void
     $todolistService->showTodolist();
     $todolistView->removeTodolist();
     $todolistService->showTodolist();
-
 }
 testViewRemoveTodolist();
 

@@ -13,12 +13,12 @@ namespace View {
             public function __construct(TodolistService $todolistService)
             {
                 $this->todolistService = $todolistService;
-             }
+            }
 
             function showTodolist(): void
             {
                 while (true) {
-                    $this->todolistService = ShowTodolist();
+                    $this->todolistService->ShowTodolist();
 
                     echo "MENU" . PHP_EOL;
                     echo "1. Tambah Todo" . PHP_EOL;
