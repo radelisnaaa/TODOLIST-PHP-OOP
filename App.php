@@ -8,7 +8,7 @@ require_once __DIR__ . '/View/TodolistView.php';
 
 use Repository\TodolistRepositoryImpl;
 use Service\TodolistServiceImpl;
-use View\TodolistViewImpl;
+use View\TodolistView;
 
 echo "Aplikasi Todolist" . PHP_EOL;
 
